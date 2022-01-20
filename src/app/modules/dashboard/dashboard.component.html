@@ -1,0 +1,37 @@
+<div fxLayout="row" fxLayoutAlign="space-between-center" fxLayoutGap=2% class="status-cards" fxLayoutAlign.lt-sm="space-around center" fxLayout.lt-sm="column">
+
+    <mat-card fxFlex="25" class="col-sm-3">
+        <div fxLayout="row">
+            <div class="col-sm-9" fxFlex="60">
+                TOTAL USERS
+                <h3>{{conutusers}}</h3>
+            </div>
+
+            <div class="col-sm-3" fxFlex="40">
+                <mat-icon color="primary">people</mat-icon>
+            </div>
+        </div>
+
+
+    </mat-card>
+    <mat-card fxFlex="25" class="col-sm-3">
+        <div fxLayout="row">
+            <div class="col-sm-9" fxFlex="60">
+                TOTAL ADS
+                <h3>{{countspace}}</h3>
+            </div>
+            <div class="col-sm-3" fxFlex="40">
+                <mat-icon color="primary">commute</mat-icon>
+            </div>
+        </div>
+
+    </mat-card>
+    <mat-card class="col-sm-3" fxFlex="25" style="background-color:rgb(43, 90, 179); color: white;">
+        TOTAL MONETIZED ADS
+        <h3>{{parkingarea}}</h3>
+    </mat-card>
+</div><br>
+
+<mat-divider></mat-divider><br>
+
+<app-userstable></app-userstable>

@@ -1,0 +1,21 @@
+h2,
+button {
+    font-size: 0.8vm;
+}
+
+button {
+    border-radius: 30px;
+}
+
+input.mat-input {
+    border-radius: 30px;
+    ;
+}
+
+.mat-elevation-z8 {
+    background-color: linear-gradient(to right, rgb(46, 145, 238), rgb(22, 70, 102));
+}
+
+.button:disabled {
+    opacity: 0.5;
+}

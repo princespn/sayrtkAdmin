@@ -1,0 +1,36 @@
+<mat-nav-list>
+    <div class="profile-card">
+
+
+        <div class="header">
+            <h2>{{admin?.firstname}}{{admin?.lastname}}</h2>
+            <h4>Admin</h4>
+        </div>
+    </div>
+
+    <mat-divider></mat-divider>
+    <h2 matSubheader>Pages</h2>
+    <a mat-list-item routerLink="/main" routerLinkActive="router-link-active">
+        <mat-icon color="primary">ac_unit</mat-icon>Dashboard</a>
+    <a mat-list-item routerLink="/main/ads" routerLinkActive="router-link-active">
+        <mat-icon color="primary"> map</mat-icon>Ads</a>
+    <a mat-list-item routerLink="/main/brand" routerLinkActive="router-link-active">
+        <mat-icon color="primary">directions_car</mat-icon>Brands</a>
+    <a mat-list-item routerLink="/main/model" routerLinkActive="router-link-active">
+        <mat-icon color="primary">dialpad</mat-icon>Models</a>
+    <a mat-list-item routerLink="/main/color" routerLinkActive="router-link-active">
+        <mat-icon color="primary">format_color_fill</mat-icon>Cars Color</a>
+    <a mat-list-item routerLink="/main/transmition" routerLinkActive="router-link-active">
+        <mat-icon color="primary">subtitles</mat-icon>Cars Transmition </a>
+    <a mat-list-item routerLink="/main/fuel" routerLinkActive="router-link-active">
+        <mat-icon color="primary">disc_full</mat-icon>Fyel Type</a>
+    <a mat-list-item routerLink="/main/feature" routerLinkActive="router-link-active">
+        <mat-icon color="primary">dns</mat-icon>Features</a>
+    <a mat-list-item routerLink="/main/slideshow" routerLinkActive="router-link-active">
+        <mat-icon color="primary">desktop_mac</mat-icon>Slideshow Ads</a>
+    <mat-divider></mat-divider>
+    <h2 matSubheader>Profile</h2>
+    <a mat-list-item routerLink="/main/admin" routerLinkActive="router-link-active">
+        <mat-icon color="primary">settings</mat-icon>Admin Settings</a>
+
+</mat-nav-list>

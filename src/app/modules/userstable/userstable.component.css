@@ -1,0 +1,51 @@
+.mat-table {
+  overflow: auto;
+  max-height: 500px;
+}
+
+.mobile-label {
+  display: none;
+}
+
+@media(max-width: 600px) {
+  .mat-table {
+
+    display: inline-block;
+
+  }}
+  @media screen and (max-width: 960px) {
+    .mat-table {
+      border: 0;
+      vertical-align: middle
+    }
+
+    .mat-table caption {
+      font-size: 1em;
+    }
+
+  }
+  @media(max-width: 600px) {
+    .mat-paginator {
+      width: 500px;
+
+
+    }}
+    @media(max-width: 960px) {
+      .mat-paginator {
+        width: 390px;
+
+
+      }}
+      table ,.mat-paginator{
+        width:100%;
+      }
+      h3 ,.col-sm-9,button,.mat-card{
+        font-size:1vw;
+      }
+
+      td.is-red {
+        color: red;
+     }
+     td.is-green {
+       color: green;
+   }

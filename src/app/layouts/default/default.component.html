@@ -1,0 +1,12 @@
+<app-header (togglesidebarforme)="sidebartoggler()"></app-header>
+
+
+<mat-drawer-container>
+    <mat-drawer class="hide-on-small-screens" [mode]="(isHandset$ | async) ? 'over' : 'side'" [opened]="!(isHandset$ | async)" [opened]="sidebaropen" #matdrawer>
+        <app-sidebar></app-sidebar>
+    </mat-drawer>
+    <mat-drawer-content>
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+
+</mat-drawer-container>

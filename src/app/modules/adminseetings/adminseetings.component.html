@@ -1,0 +1,66 @@
+<h2>Admin Settings</h2>
+<div class="container">
+
+    <div class="row" style="background-color: rgba(255, 255, 255, 0.979);">
+        <h2>Basic Profile</h2>
+    </div>
+    <form [formGroup]="form3">
+        <div fxLayout="row" fxLayoutAlign="space-between-center" fxLayoutGap=10% class="status-cards" fxLayoutAlign.lt-sm="space-around center" fxLayout.lt-sm="column" fxLayout.sm="column">
+            <div class="mat-elevation-z8" fxFlex="70">
+                <mat-card style="text-align: center;" fxLayout="column">
+                    <div fxLayout="row" fxFlex="30" fxLayoutAlign="space-between-center" fxLayoutGap=5% fxLayoutAlign.lt-sm="space-around center" fxLayout.lt-sm="column" fxLayout.sm="column">
+                        <mat-form-field fxFlex="60" appearance="outline">
+                            <mat-label>Please specify the first name</mat-label>
+                            <input matInput formControlName="firstname">
+                        </mat-form-field>
+                        <mat-form-field fxFlex="60" appearance="outline">
+                            <mat-label>Last Name</mat-label>
+                            <input matInput formControlName="lastname">
+                        </mat-form-field>
+                    </div>
+                    <div fxLayout="row" fxFlex="30" fxLayoutAlign="space-between-center" fxLayoutGap=5% fxLayoutAlign.lt-sm="space-around center" fxLayout.lt-sm="column" fxLayout.sm="column">
+                        <mat-form-field fxFlex="60" appearance="outline">
+                            <mat-label>Email</mat-label>
+                            <input matInput formControlName="email">
+                        </mat-form-field>
+                        <mat-form-field fxFlex="60" appearance="outline">
+                            <mat-label>Phone</mat-label>
+                            <input matInput formControlName="phone">
+                        </mat-form-field>
+                    </div>
+                    <div fxFlex="40" style="align-items: center;">
+                        <button mat-raised-button color="primary" (click)="saveadmininfo()">SAVE SETTINGS</button>
+                    </div><br>
+
+                </mat-card>
+
+            </div>
+            <div fxFlex="40">
+
+            </div>
+        </div>
+    </form>
+    <br>
+    <div fxLayout="row">
+        <div fxFlex="40" fxLayout="column" fxLayoutAlign="space-between-center" fxFlex.lt-md="60" class="status-cards">
+            <h2>Reset Password</h2>
+            <p>please enter your email to send you email to reset password </p>
+            <form [formGroup]="form4">
+                <mat-card fxLayout="column" fxLayoutAlign="space-between-center" fxLayoutGap=5% class="mat-elevation-z8">
+                    <mat-form-field fxFlex="20" appearance="outline">
+                        <mat-label>Email</mat-label>
+                        <input matInput formControlName="email">
+                    </mat-form-field>
+
+
+
+
+
+                    <div fxFlex="30" style="align-items: center;">
+                        <button mat-raised-button color="primary" [disabled]="!form4.valid" (click)="sendPasswordResetEmail()">SEND</button></div>
+
+                </mat-card>
+            </form>
+        </div>
+    </div>
+</div>
